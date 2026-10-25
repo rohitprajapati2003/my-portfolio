@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Rohit Prajapati's personal portfolio, frontend skills and Expense Tracker project."
+    />
+    <title>Rohit Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar container">
+        <a href="#home" class="logo">RP<span>.</span></a>
+
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact" class="nav-button">Contact Me</a></li>
+        </ul>
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Switch to dark mode"
+          title="Toggle dark mode"
+        >
+          🌙
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container" id="home">
+        <div class="hero-content">
+          <p class="eyebrow">HELLO, I'M</p>
+          <h1>Rohit <span>Prajapati</span></h1>
+          <h2>Aspiring Frontend Developer</h2>
+
+          <p class="hero-text">
+            I am a B.Sc. Information Technology graduate learning frontend
+            development and building practical web projects using HTML, CSS and
+            JavaScript.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Project</a>
+            <a href="resume.pdf" class="btn btn-primary" download>
+              Download Resume ↓
+            </a>
+          </div>
+
+          <p class="location">📍 Mumbai, Maharashtra, India</p>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="images/profile.jpg"
+            alt="Rohit Prajapati"
+            onerror="
+              this.style.display = 'none';
+              this.nextElementSibling.style.display = 'flex';
+            "
+          />
+
+          <div class="photo-placeholder">
+            <span>RP</span>
+            <p>Add your photo</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-light" id="about">
+        <div class="container">
+          <p class="eyebrow">GET TO KNOW ME</p>
+          <h2 class="section-title">About Me</h2>
+
+          <div class="about-card">
+            <p>
+              I am a B.Sc. Information Technology graduate with a strong
+              interest in web development. I have basic knowledge of HTML, CSS
+              and JavaScript and am improving my skills through hands-on
+              practice and personal projects.
+            </p>
+            <p>
+              My goal is to start my career as a Frontend Developer, learn new
+              technologies and contribute to useful, user-friendly websites.
+            </p>
+            <div class="education">
+              <span class="education-icon">🎓</span>
+              <div>
+                <h3>B.Sc. Information Technology</h3>
+                <p>Graduate</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="skills">
+        <p class="eyebrow">WHAT I AM LEARNING</p>
+        <h2 class="section-title">My Skills</h2>
+        <p class="section-description">
+          My current skills and tools used in my learning projects.
+        </p>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-icon html-icon">5</div>
+            <h3>HTML5</h3>
+            <p>Page structure and content</p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon css-icon">3</div>
+            <h3>CSS3</h3>
+            <p>Styling and responsive layouts</p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon js-icon">JS</div>
+            <h3>JavaScript</h3>
+            <p>Basic scripting and interactions</p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon tools-icon">⌘</div>
+            <h3>VS Code</h3>
+            <p>Writing and managing code</p>
+          </article>
+        </div>
+      </section>
+
+     
+<section class="section section-light" id="projects">
+  <div class="container">
+    <p class="eyebrow">MY WORK</p>
+    <h2 class="section-title">Featured Projects</h2>
+    <p class="section-description">
+      Here are some of my web development projects built
+      to practice frontend development and create useful
+      web experiences.
+    </p>
+
+    <div class="projects-grid">
+
+      <!-- Project 1: RepairProHub -->
+      <article class="project-item">
+        <div class="project-top repair-project">
+          <span class="project-number">PROJECT 01</span>
+          <div class="project-symbol">🔧</div>
+          <h3>RepairProHub</h3>
+          <p>Mobile Repairing Center Website</p>
+        </div>
+
+        <div class="project-details">
+          <p>
+            A website for a mobile repairing center that
+            showcases repair services for Android phones,
+            iPhones, earbuds, Bluetooth devices and speakers.
+          </p>
+
+          <h4>Key Highlights</h4>
+          <ul>
+            <li>Showcases mobile and electronic repair services</li>
+            <li>Organizes service information in a clear layout</li>
+            <li>Includes website branding and visual elements</li>
+          </ul>
+
+          <div class="tech-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+
+          <div class="project-actions">
+            <a
+              href="https://repair-pro-hub-eight.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary">
+              Live Demo ↗
+            </a>
+
+            <a
+              href="https://github.com/rohitprajapati2003/RepairProHub"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline">
+              GitHub Code ↗
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2: Expense Tracker -->
+      <article class="project-item">
+        <div class="project-top expense-project">
+          <span class="project-number">PROJECT 02</span>
+          <div class="project-symbol">₹</div>
+          <h3>Expense Tracker</h3>
+          <p>Personal Expense Management Web App</p>
+        </div>
+
+        <div class="project-details">
+          <p>
+            A web application that helps users record and
+            manage daily expenses, view expense entries and
+            calculate total spending using browser storage.
+          </p>
+
+          <h4>Key Highlights</h4>
+          <ul>
+            <li>Add, view and delete expense entries</li>
+            <li>Automatically calculate total expenses</li>
+            <li>Save expense data using LocalStorage</li>
+          </ul>
+
+          <div class="tech-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>LocalStorage</span>
+          </div>
+
+          <div class="project-actions">
+            <a
+              href="https://github.com/rohitprajapati2003/Expense-Tracker"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary">
+              GitHub Code ↗
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+    
+<section class="section contact-section" id="contact">
+  <div class="container">
+
+    <div class="contact-heading">
+      <p class="eyebrow">LET'S CONNECT</p>
+      <h2 class="section-title">
+        Get In <span>Touch</span>
+      </h2>
+      <p class="contact-intro">
+        Have an opportunity or want to connect?
+        Feel free to reach out. I'm always open to
+        learning, collaboration and new opportunities.
+      </p>
+    </div>
+
+    <div class="contact-layout">
+
+      <!-- Contact information -->
+      <div class="contact-left">
+        <h3>Contact Information</h3>
+        <p class="contact-subtitle">
+          Feel free to connect with me through these channels.
+        </p>
+
+        <div class="contact-list">
+
+          <a class="contact-item"
+             href="mailto:YOUR_EMAIL@example.com">
+            <span class="contact-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="14"
+                  rx="2"></rect>
+                <path d="m3 7 9 6 9-6"></path>
+              </svg>
+            </span>
+            <span class="contact-detail">
+              <span class="contact-label">Email Address</span>
+              <span class="contact-value">
+                rohit.21prajapati2003@gmail.com
+              </span>
+            </span>
+            <span class="contact-arrow">↗</span>
+          </a>
+
+          <a class="contact-item" href="tel:+91YOURNUMBER">
+            <span class="contact-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18
+                  2 19.79 19.79 0 0 1-8.63-3.07
+                  19.5 19.5 0 0 1-6-6A19.79
+                  19.79 0 0 1 2.12 4.18
+                  2 2 0 0 1 4.11 2h3a2 2
+                  0 0 1 2 1.72c.12.96.36
+                  1.9.7 2.8a2 2 0 0 1-.45
+                  2.11L8.09 9.91a16 16 0 0
+                  0 6 6l1.27-1.27a2 2 0
+                  0 1 2.11-.45c.9.34
+                  1.84.58 2.8.7a2 2 0
+                  0 1 1.73 2.03z"></path>
+              </svg>
+            </span>
+            <span class="contact-detail">
+              <span class="contact-label">Phone Number</span>
+              <span class="contact-value">+91 87796 18149</span>
+            </span>
+            <span class="contact-arrow">↗</span>
+          </a>
+
+          <div class="contact-item">
+            <span class="contact-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20 10c0 5-8 12-8 12S4 15 4 10
+                  a8 8 0 1 1 16 0Z"></path>
+                <circle cx="12" cy="10" r="2.5"></circle>
+              </svg>
+            </span>
+            <span class="contact-detail">
+              <span class="contact-label">Location</span>
+              <span class="contact-value">
+                 Borivali (West), Mumbai - 400103 
+              </span>
+            </span>
+          </div>
+
+        </div>
+
+        <div class="social-area">
+          <h3>Connect With Me</h3>
+          <p>Find me on professional and social platforms.</p>
+
+          <div class="social-links">
+
+            <!-- GitHub -->
+            <a class="social-link github"
+               href="https://github.com/rohitprajapati2003"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="GitHub"
+               title="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12
+                  6v-3.87a3.37 3.37 0 0 0-.94-2.61
+                  c3.14-.35 6.44-1.54 6.44-7A5.44
+                  5.44 0 0 0 19 4.77 5.07 5.07 0
+                  0 0 18.91 1S17.73.65 15 2.48a13.38
+                  13.38 0 0 0-7 0C5.27.65 4.09 1
+                  4.09 1A5.07 5.07 0 0 0 4 4.77
+                  a5.44 5.44 0 0 0-1.5 3.78c0 5.42
+                  3.3 6.61 6.44 7A3.37 3.37 0 0 0
+                  8 18.13V22"></path>
+              </svg>
+            </a>
+
+            <!-- LinkedIn: replace placeholder with your profile URL -->
+            <a class="social-link linkedin"
+               href="https://www.linkedin.com/in/rohit-prajapati-414081290/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="LinkedIn"
+               title="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7
+                  a2 2 0 0 0-4 0v7h-4v-7a6 6
+                  0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+
+            <!-- Instagram: replace placeholder with your profile URL -->
+            <!--<a class="social-link instagram"
+               href="YOUR_INSTAGRAM_PROFILE_URL"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Instagram"
+               title="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18"
+                  rx="5"></rect>
+                <circle cx="12" cy="12" r="4"></circle>
+                <circle cx="18" cy="6" r="1"></circle>
+              </svg>
+            </a> -->
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Right side: professional message, no form -->
+      <div class="contact-right">
+        <div class="contact-decoration">✦</div>
+        <span class="contact-badge">
+          <span class="status-dot"></span>
+          OPEN TO OPPORTUNITIES
+        </span>
+
+        <h3>Let's build something great.</h3>
+
+        <p>
+          I'm looking forward to starting my career in
+          frontend development, learning new technologies
+          and working on meaningful web projects.
+        </p>
+
+        <div class="contact-highlights">
+          <div>
+            <span class="highlight-number">01</span>
+            <span>Frontend Development</span>
+          </div>
+          <div>
+            <span class="highlight-number">02</span>
+            <span>Learning & Collaboration</span>
+          </div>
+          <div>
+            <span class="highlight-number">03</span>
+            <span>Internship Opportunities</span>
+          </div>
+        </div>
+
+        <a class="contact-cta"
+           href="mailto:YOUR_EMAIL@example.com">
+          Let's Talk <span>↗</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+      <p>
+        © <span id="year"></span> Rohit Prajapati. Built with HTML, CSS &
+        JavaScript.
+      </p>
+    </footer>
+  </body>
+</html>
